@@ -1,0 +1,379 @@
+
+/* GENERAL */
+body {
+    margin: 0;
+    background-color: #f6eee2;
+    color: #49302E;
+    font-family: Georgia, serif;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: #4A101B;
+    position: fixed;
+    top: 0;
+    left: -240px;
+    padding: 25px 18px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+
+/* LOGO */
+.logo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    color: #F1D9CC;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+
+.logo p {
+    color: #D9BDB2;
+    font-size: 12px;
+}
+
+/* NAVIGATION */
+nav a {
+    display: block;
+    color: #F8F1EA;
+    text-decoration: none;
+    padding: 13px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+nav a:hover {
+    background-color: #800020;
+}
+
+/* MAIN CONTENT */
+main {
+    margin-left: 0px;
+    padding: 30px 50px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+header h1 {
+    color: #800020;
+    font-size: 36px;
+}
+
+header p {
+    color: #806B63;
+}
+
+/* HOME */
+.home-section {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.home-section h1 {
+    color: #800020;
+    font-size: 40px;
+}
+
+.small-heading {
+    color: #900020;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.welcome-text {
+    color: #806B63;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+/* DATE */
+.date-card {
+    background-color: #EFE1D6;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* JOURNAL SECTIONS */
+section:not(.home-section) {
+    background-color: #FFFAF6;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+}
+
+section h2 {
+    color: #800020;
+}
+
+section p {
+    color: #806B63;
+}
+
+/* TEXT AREAS */
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #DECFC5;
+    border-radius: 8px;
+    background-color: #FFFCF9;
+    font-family: Arial, sans-serif;
+}
+
+textarea:focus {
+    outline: 1px solid #900020;
+}
+
+/* VERSE */
+blockquote {
+    background-color: #F1E4DC;
+    padding: 20px;
+    border-left: 4px solid #900020;
+    border-radius: 8px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #806B63;
+}
+
+
+/* GRATITUDE LIST */
+.gratitude-list {
+    padding-left: 25px;
+}
+
+.gratitude-list li {
+    padding: 8px;
+    color: #800020;    
+}
+
+
+.gratitude-list input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #DECFC5;
+    border-radius: 8px;
+    background-color: #FFFCF9;
+}
+/* LOGO */
+.logo {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #F8F1EA;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* MENU ICON */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    font-size: 28px;
+    color: #800020;
+    cursor: pointer;
+    z-index: 11;
+}
+
+/* SHOW SIDEBAR WHEN MENU IS CLICKED */
+#menu-toggle:checked ~ .sidebar {
+    left: 0;
+}
+
+/* DONE BUTTON */
+
+.done-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.done-button input {
+    display: none;
+}
+
+.done-button label {
+    display: inline-block;
+    background-color: #800020;
+    color: #F8F1EA;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.done-button input:checked + label {
+    background-color: #E8D5C9;
+    color: #800020;
+}
+
+/* OPEN SIDEBAR */
+#menu-toggle:checked ~ .sidebar {
+    left: 0;
+}
+.logo-divider {
+    width: 45px;
+    border: none;
+    border-top: 1px solid #D9BDB2;
+    margin: 18px auto 25px;
+}
+
+
+/* Welcome section */
+.home-section {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.welcome-card {
+    background-color: #FFF9F4;
+    padding: 55px 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(74, 16, 27, 0.06);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+max-width: 850px;
+box-sizing: border-box;
+    /* Floral decorations around welcome card */
+
+}
+.welcome-card::before {
+    content: "❀  ✿";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #C99BA0;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.welcome-card::after {
+    content: "✿  ❀";
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: #C99BA0;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.small-heading {
+    color: #800020;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.welcome-card h1 {
+    color: #4A101B;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.welcome-text {
+    color: #745B52;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Date section */
+.date-card {
+    background-color: #F5E9DF;
+    max-width: 350px;
+    margin: 35px auto 0;
+    padding: 22px;
+    border-radius: 15px;
+}
+
+.date-card label {
+    display: block;
+    color: #4A101B;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.date-card p {
+    color: #806A61;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.date-card input {
+    padding: 10px;
+    border: 1px solid #D9BDB2;
+    border-radius: 8px;
+    background-color: #FFF9F4;
+    color: #49302E;
+    font-family: inherit;
+}
+/* Floral section dividers */
+
+.floral-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #C99BA0;
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+.floral-divider::before,
+.floral-divider::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: #D9BDB2;
+}
